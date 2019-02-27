@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-02-27T06:28:41.270Z",
+    "end": "2019-02-27T06:28:42.394Z",
+    "duration": 1124,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "2589868a-4b30-481b-9dc3-7a474e30e64b",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "833b6fb6-e216-4a21-a0c0-e32dd693dbed",
+        "title": "随即生成数组测试",
+        "fullFile": "D:\\gitProject\\dockerNode\\test\\user.test.ts",
+        "file": "\\test\\user.test.ts",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "用例1",
+            "fullTitle": "随即生成数组测试 用例1",
+            "timedOut": false,
+            "duration": 1038,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    const dao = new index_1.UserDAO();\n    const y = yield dao.findAll();\n    return true;\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "201c65b6-63a8-4d80-9782-dc0cd9db4275",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "201c65b6-63a8-4d80-9782-dc0cd9db4275"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1038,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 15000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 15000
+  },
+  "copyrightYear": 2019
+}
