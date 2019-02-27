@@ -6,17 +6,12 @@
  *
  */
 
-import { createConnection, Schema } from 'mongoose';
-import {JsonController,ContentType,Controller, Post,UseBefore,Ctx,Body} from "routing-controllers";
+import {JsonController, Post,UseBefore,Ctx,Body} from "routing-controllers";
 import { Context } from 'koa';
-import * as httpStatus from 'http-status';
 import {Service} from "typedi";
-import config from '../../common/config';
-import {APIError} from "../../common/helpers/error";
 import { UserDAO } from './dao';
 import { User } from './model';
 import { apiLogger } from '../../middleware';
-import IUser from './model/user.imp.js';
 
 @Service()
 @UseBefore(apiLogger('register'))
