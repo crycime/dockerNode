@@ -11,7 +11,6 @@ import server from './server'
   try {
     //创建服务
     await server.init()
-
   }catch (e) {
     console.error(e)
   }
