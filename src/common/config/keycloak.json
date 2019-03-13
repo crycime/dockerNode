@@ -1,0 +1,14 @@
+
+
+{
+  "realm": "ptah",
+  "auth-server-url": "http://176.122.187.48:8080/auth",
+  "ssl-required": "none",
+  "resource": "ptah",
+  "public-client": true,
+  "bearer-only": true,
+  "credentials": { "secret": "d3e1c034-d238-4eef-9ace-d0ddd6a1f8b7"},
+  "use-resource-role-mappings": true,
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjf4lu3UFq9M6BIrvkFTfYdhJm2ixTt7c20KeX/Zqww3b7bcop4iuRKIzTj9no3zjO8X2XihbooUIh6ELSuXjF/q59y0B+ByBqJXvG7nni+xjyMz8O0RMRdYhDHZIMto+iCtyoid3IGLH+ySI62nWT3NicA5ZdumWxUyq5Nzg6UsOXvXGXMLNsU0CHhqpDaAeREOXxFJMvH+VA7xM6tyZCftBEzPvCecZlJtOnVlWj/Cylf+Y9sVasCOUNI9yjNJ8sm3UJaEM9czbOjCWdhpravDltH3VZXkgdgwPbphFYVeWg9seDpfZERP4wGYJF9yFZlE1Mu4Dp3QyfoVTEwFYQwIDAQAB",
+  "confidential-port": 0
+}

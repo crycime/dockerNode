@@ -18,7 +18,6 @@ import { json } from '../../common/util';
 
 @Service()
 @Authorized()
-// @UseBefore(checkRole())
 @UseBefore(apiLogger('register'))
 @JsonController('/users')
 export default class UserController {
