@@ -6,16 +6,16 @@
  *
  */
 
-
 import { Document } from 'mongoose';
 
 export default interface IUser extends Document {
+    _id: string;
 
-  _id:string;
+    keycloakId: string;
 
-  userName: string;
+    userName: string;
 
-  password: string;
+    password: string;
 
-  email: string;
+    email: string;
 }

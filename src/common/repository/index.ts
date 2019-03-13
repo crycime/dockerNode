@@ -9,7 +9,4 @@
 import baseDao from './base.dao';
 import baseModel from './base.model';
 
-export {
-  baseDao,
-  baseModel
-};
+export { baseDao, baseModel };

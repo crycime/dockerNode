@@ -6,14 +6,11 @@
  *
  */
 
-import IBaseConfig, { IMongodbConfig, RUNTIME } from './base';
+import IBaseConfig, { IMongodbConfig, IKeycloakConfig, RUNTIME } from './base';
 
 const env = `./${process.env.NODE_ENV || RUNTIME.DEVELOPER}`;
 /* tslint:disable */
 const config: IBaseConfig = require(env).default;
 
 export default config;
-export {
-  IBaseConfig,
-  IMongodbConfig
-};
+export { IBaseConfig, IKeycloakConfig, IMongodbConfig };

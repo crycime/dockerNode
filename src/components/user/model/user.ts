@@ -6,37 +6,38 @@
  *
  */
 
-import IUser  from './user.imp';
+import IUser from './user.imp';
 
 class User {
+    // public User: IUser;
+    public userName: string;
+    public keycloakId: string;
+    public password: string;
+    public email: string;
 
-  // public User: IUser;
-  public userName: string;
-  public password: string;
-  public email: string;
+    constructor(userName, password, email, keycloakId) {
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+        this.keycloakId = keycloakId;
+        // this.User = User;
+    }
 
-  constructor(userName,password,email) {
-    this.userName = userName
-    this.password = password
-    this.email = email
-    // this.User = User;
-  }
-
-  // get _id (): string {
-  //   return this.User._id;
-  // }
-  //
-  // get email (): string {
-  //   return this.User.email;
-  // }
-  //
-  // get userName (): string {
-  //   return this.User.userName;
-  // }
-  //
-  // get password (): string {
-  //   return this.User.password;
-  // }
+    // get _id (): string {
+    //   return this.User._id;
+    // }
+    //
+    // get email (): string {
+    //   return this.User.email;
+    // }
+    //
+    // get userName (): string {
+    //   return this.User.userName;
+    // }
+    //
+    // get password (): string {
+    //   return this.User.password;
+    // }
 }
 Object.seal(User);
 

@@ -5,13 +5,13 @@
  * Time: 16:04
  *
  */
-import server from './server'
+import { server } from './common/server';
 
-(async ()=>{
-  try {
-    //创建服务
-    await server.init()
-  }catch (e) {
-    console.error(e)
-  }
-})()
+(async () => {
+    try {
+        //创建服务
+        await server.init();
+    } catch (e) {
+        console.error(e);
+    }
+})();
