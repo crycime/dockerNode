@@ -1,0 +1,228 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "OleLpStakeAutomatorInterface",
+  "sourceName": "contracts/udex/OleLpStakeAutomatorInterface.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "oleAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "unlockTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "createLockBoth",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "oleAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "unlockTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "createLockOLE",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "otherAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "unlockTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "createLockOther",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "oleAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseAmountBoth",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "oleAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseAmountOLE",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "otherAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseAmountOther",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawBoth",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawOle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "oleMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherMin",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawOther",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

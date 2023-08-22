@@ -1,4 +1,0 @@
-server-tests
---recursive
---timeout 15000
---reporter mochawesome

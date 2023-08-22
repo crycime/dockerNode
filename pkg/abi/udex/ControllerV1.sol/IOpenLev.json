@@ -1,0 +1,77 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IOpenLev",
+  "sourceName": "contracts/udex/ControllerV1.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "trader",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        }
+      ],
+      "name": "activeTrades",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "deposited",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "held",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint128",
+              "name": "lastBlockNum",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint256",
+              "name": "heldRelativeBorrowed",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "newHeld",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowed",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Types.Trade",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

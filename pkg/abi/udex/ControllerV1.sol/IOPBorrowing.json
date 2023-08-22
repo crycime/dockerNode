@@ -1,0 +1,68 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IOPBorrowing",
+  "sourceName": "contracts/udex/ControllerV1.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "collateralIndex",
+          "type": "bool"
+        }
+      ],
+      "name": "activeCollaterals",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "address",
+          "name": "pool0",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "pool1",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "addMarket",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

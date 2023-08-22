@@ -1,6 +1,10 @@
 node_modules
-dist
+.env
+coverage
+coverage.json
+
+# Hardhat files
+cache
+artifacts
 .idea
-log
-mochawesome-report
-package-lock.json
+

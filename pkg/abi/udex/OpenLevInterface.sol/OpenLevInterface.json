@@ -1,0 +1,655 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "OpenLevInterface",
+  "sourceName": "contracts/udex/OpenLevInterface.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract LPoolInterface",
+          "name": "pool0",
+          "type": "address"
+        },
+        {
+          "internalType": "contract LPoolInterface",
+          "name": "pool1",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marginLimit",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "addMarket",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "closeAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOrMaxAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "closeTrade",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "trader",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "closeHeld",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOrMaxAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "closeTradeFor",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        }
+      ],
+      "name": "getMarketSupportDexs",
+      "outputs": [
+        {
+          "internalType": "uint32[]",
+          "name": "",
+          "type": "uint32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "liquidate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "marginRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "current",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cAvg",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "hAvg",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "limit",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deposit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrow",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minBuyAmount",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Types.MarginTradeVars",
+          "name": "tradeVars",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "marginTrade",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "trader",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deposit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrow",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minBuyAmount",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Types.MarginTradeVars",
+          "name": "tradeVars",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "marginTradeFor",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint8",
+          "name": "poolIndex",
+          "type": "uint8"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "moveInsurance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        }
+      ],
+      "name": "payoffTrade",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        },
+        {
+          "internalType": "contract DexAggregatorInterface",
+          "name": "dexAggregator",
+          "type": "address"
+        }
+      ],
+      "name": "setAddressConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "defaultFeesRate",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint8",
+          "name": "insuranceRatio",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint16",
+          "name": "defaultMarginLimit",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "priceDiffientRatio",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "updatePriceDiscount",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "feesDiscount",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint128",
+          "name": "feesDiscountThreshold",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint16",
+          "name": "penaltyRatio",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint8",
+          "name": "maxLiquidationPriceDiffientRatio",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint16",
+          "name": "twapDuration",
+          "type": "uint16"
+        }
+      ],
+      "name": "setCalculateConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "defaultliquidationRate",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint8",
+          "name": "liquidaMaximumYield",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint16",
+          "name": "liquidaMinimumYield",
+          "type": "uint16"
+        }
+      ],
+      "name": "setLiquidationConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "feesRate",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marginLimit",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "priceDiffientRatio",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint32[]",
+          "name": "dexs",
+          "type": "uint32[]"
+        }
+      ],
+      "name": "setMarketConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "liquidationRate",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "liquidaMaximumYield",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "liquidaMinimumYield",
+          "type": "uint16"
+        }
+      ],
+      "name": "setMarketLiquidationConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_opLimitOrder",
+          "type": "address"
+        }
+      ],
+      "name": "setOpLimitOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_router1inch",
+          "type": "address"
+        }
+      ],
+      "name": "setRouter1inch",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "dex",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bool",
+          "name": "support",
+          "type": "bool"
+        }
+      ],
+      "name": "setSupportDex",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint24",
+          "name": "tax",
+          "type": "uint24"
+        }
+      ],
+      "name": "setTaxRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTokenLiquidationFactor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "updatePrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,662 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IOPLimitOrder",
+  "sourceName": "contracts/IOPLimitOrder.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "salt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "deadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "commissionToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commission",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price0",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OPLimitOrderStorage.Order",
+          "name": "order",
+          "type": "tuple"
+        }
+      ],
+      "name": "cancelOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "salt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "deadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "commissionToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commission",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price0",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OPLimitOrderStorage.Order[]",
+          "name": "orders",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "cancelOrders",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "closeHeld",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOrMaxAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "salt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "deadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "commissionToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commission",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price0",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OPLimitOrderStorage.Order[]",
+          "name": "orders",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "closeTradeAndCancel",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "salt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "deadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "commissionToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commission",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isStopLoss",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "closeHeld",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expectReturn",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OPLimitOrderStorage.CloseOrder",
+          "name": "order",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fillingHeld",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "fillCloseOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "salt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "deadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "commissionToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commission",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deposit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrow",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expectHeld",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OPLimitOrderStorage.OpenOrder",
+          "name": "order",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fillingDeposit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "fillOpenOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "salt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "deadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "commissionToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commission",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price0",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OPLimitOrderStorage.Order",
+          "name": "order",
+          "type": "tuple"
+        }
+      ],
+      "name": "getOrderId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "salt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "deadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "commissionToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commission",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isStopLoss",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "closeHeld",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expectReturn",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OPLimitOrderStorage.CloseOrder",
+          "name": "order",
+          "type": "tuple"
+        }
+      ],
+      "name": "hashCloseOrder",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "salt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "deadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marketId",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "longToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "commissionToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commission",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deposit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrow",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expectHeld",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OPLimitOrderStorage.OpenOrder",
+          "name": "order",
+          "type": "tuple"
+        }
+      ],
+      "name": "hashOpenOrder",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_orderId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "remaining",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_orderId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "remainingRaw",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

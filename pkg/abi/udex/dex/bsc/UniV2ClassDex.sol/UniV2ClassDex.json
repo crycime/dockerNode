@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "UniV2ClassDex",
+  "sourceName": "contracts/udex/dex/bsc/UniV2ClassDex.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122038b6f20dbe2ca9e9b91248f587071bd36b57594fac58e03e029e3b5419892b0a64736f6c63430007060033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122038b6f20dbe2ca9e9b91248f587071bd36b57594fac58e03e029e3b5419892b0a64736f6c63430007060033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

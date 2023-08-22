@@ -1,0 +1,76 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "OleLpStakeAutomatorStorage",
+  "sourceName": "contracts/udex/OleLpStakeAutomatorInterface.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "lpToken",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nativeToken",
+      "outputs": [
+        {
+          "internalType": "contract IWETH",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ole",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "otherToken",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "xole",
+      "outputs": [
+        {
+          "internalType": "contract XOLEInterface",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610110806100206000396000f3fe6080604052348015600f57600080fd5b506004361060505760003560e01c80631aef5e0d146055578063433b3c051460775780635fcbd28514607d578063abb5aac3146083578063e1758bd8146089575b600080fd5b605b608f565b604080516001600160a01b039092168252519081900360200190f35b605b609e565b605b60ad565b605b60bc565b605b60cb565b6000546001600160a01b031681565b6002546001600160a01b031681565b6003546001600160a01b031681565b6001546001600160a01b031681565b6004546001600160a01b03168156fea2646970667358221220c5b2a489765e1b6ab7237b3a3fc9690ffc02d86daf5b85a2c0e10457045e26da64736f6c63430007060033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060505760003560e01c80631aef5e0d146055578063433b3c051460775780635fcbd28514607d578063abb5aac3146083578063e1758bd8146089575b600080fd5b605b608f565b604080516001600160a01b039092168252519081900360200190f35b605b609e565b605b60ad565b605b60bc565b605b60cb565b6000546001600160a01b031681565b6002546001600160a01b031681565b6003546001600160a01b031681565b6001546001600160a01b031681565b6004546001600160a01b03168156fea2646970667358221220c5b2a489765e1b6ab7237b3a3fc9690ffc02d86daf5b85a2c0e10457045e26da64736f6c63430007060033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,382 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IOpenLev",
+  "sourceName": "contracts/udex/periphery/QueryHelper.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        }
+      ],
+      "name": "activeTrades",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "deposited",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "held",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "depositToken",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint128",
+              "name": "lastBlockNum",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint256",
+              "name": "heldRelativeBorrowed",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "newHeld",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowed",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Types.Trade",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "addressConfig",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract DexAggregatorInterface",
+              "name": "dexAggregator",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "controller",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "wETH",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "xOLE",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IOpenLev.AddressConfig",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "calculateConfig",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint16",
+              "name": "defaultFeesRate",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint8",
+              "name": "insuranceRatio",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint16",
+              "name": "defaultMarginLimit",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "priceDiffientRatio",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "updatePriceDiscount",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "feesDiscount",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint128",
+              "name": "feesDiscountThreshold",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint16",
+              "name": "penaltyRatio",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint8",
+              "name": "maxLiquidationPriceDiffientRatio",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint16",
+              "name": "twapDuration",
+              "type": "uint16"
+            }
+          ],
+          "internalType": "struct IOpenLev.CalculateConfig",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        }
+      ],
+      "name": "getMarketSupportDexs",
+      "outputs": [
+        {
+          "internalType": "uint32[]",
+          "name": "",
+          "type": "uint32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "longToken",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "marginRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "current",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cAvg",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "hAvg",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "limit",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        }
+      ],
+      "name": "markets",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract LPoolInterface",
+              "name": "pool0",
+              "type": "address"
+            },
+            {
+              "internalType": "contract LPoolInterface",
+              "name": "pool1",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint16",
+              "name": "marginLimit",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "feesRate",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "priceDiffientRatio",
+              "type": "uint16"
+            },
+            {
+              "internalType": "address",
+              "name": "priceUpdater",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pool0Insurance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pool1Insurance",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IOpenLev.MarketVar",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "taxes",
+      "outputs": [
+        {
+          "internalType": "uint24",
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "totalHelds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "marketId",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bytes",
+          "name": "dexData",
+          "type": "bytes"
+        }
+      ],
+      "name": "updatePrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
